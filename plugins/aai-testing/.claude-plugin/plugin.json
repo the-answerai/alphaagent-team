@@ -1,12 +1,17 @@
 {
   "name": "aai-testing",
   "version": "1.0.0",
-  "description": "Testing agents and QA - unit, API, E2E test specialists and test automation patterns",
+  "description": "Testing agents and QA - technology-agnostic unit, API, and E2E test specialists. Auto-detects testing framework.",
   "author": {
     "name": "AnswerAI",
     "url": "https://github.com/the-answerai"
   },
+  "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["testing", "qa", "unit-tests", "e2e", "automation"]
+  "keywords": ["testing", "qa", "unit-tests", "e2e", "automation", "stack-detection"],
+  "recommends": {
+    "plugins": ["aai-core"]
+  },
+  "agents": "./agents/"
 }

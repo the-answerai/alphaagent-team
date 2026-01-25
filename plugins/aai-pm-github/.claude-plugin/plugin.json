@@ -1,15 +1,25 @@
 {
   "name": "aai-pm-github",
   "version": "1.0.0",
-  "description": "GitHub Issues management - triage issues, create Linear tickets, close fixed/outdated issues",
+  "description": "GitHub Issues management - create, plan, optimize, and triage GitHub issues with codebase exploration and duplicate detection",
   "author": {
     "name": "AnswerAI",
     "url": "https://github.com/the-answerai"
   },
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["github", "issues", "pm", "triage", "workflow"],
+  "keywords": ["github", "issues", "pm", "triage", "workflow", "git"],
   "recommends": {
-    "mcps": ["linear-mcp"]
+    "plugins": ["aai-core"]
+  },
+  "agents": "./agents/",
+  "skills": "./skills/",
+  "autoLoad": {
+    "when": {
+      "files": [".github/ISSUE_TEMPLATE", ".github/workflows"]
+    }
+  },
+  "compatibility": {
+    "claudeCode": ">=1.0.33"
   }
 }

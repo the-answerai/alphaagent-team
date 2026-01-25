@@ -1,5 +1,5 @@
 {
-  "description": "Standard development workflow hooks - branch protection, package manager enforcement, and code formatting",
+  "description": "Standard development workflow hooks - branch protection, package manager enforcement, code formatting, and validation",
   "hooks": {
     "PreToolUse": [
       {
@@ -34,6 +34,18 @@
             "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-master-commits.cjs",
             "timeout": 2000,
             "description": "Block direct commits to master/main branches - must use feature branches"
+          },
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/validate-completion-claims.cjs",
+            "timeout": 65000,
+            "description": "Validate test count and completion claims in commit messages"
+          },
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/require-verification.cjs",
+            "timeout": 35000,
+            "description": "Require verification evidence for completion claims"
           }
         ]
       },
@@ -71,6 +83,19 @@
             "command": "npx prettier --write \"$FILE\" 2>/dev/null || true",
             "timeout": 5000,
             "description": "Auto-format files after edits (if prettier is available)"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/validate-anti-patterns.cjs",
+            "timeout": 10000,
+            "description": "Check for backup files, console.log in production, and other anti-patterns"
           }
         ]
       }

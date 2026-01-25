@@ -1,12 +1,17 @@
 {
   "name": "aai-dev-frontend",
   "version": "1.0.0",
-  "description": "Frontend development agent - React, Vue, Angular component architecture and patterns",
+  "description": "Frontend development agent - technology-agnostic UI component architecture, state management, and patterns. Auto-detects project stack.",
   "author": {
     "name": "AnswerAI",
     "url": "https://github.com/the-answerai"
   },
+  "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["frontend", "react", "vue", "components", "development"]
+  "keywords": ["frontend", "ui", "components", "development", "stack-detection"],
+  "recommends": {
+    "plugins": ["aai-core"]
+  },
+  "agents": "./agents/"
 }

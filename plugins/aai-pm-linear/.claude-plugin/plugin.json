@@ -1,15 +1,21 @@
 {
   "name": "aai-pm-linear",
   "version": "1.0.0",
-  "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets",
+  "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets with codebase exploration and duplicate detection",
   "author": {
     "name": "AnswerAI",
     "url": "https://github.com/the-answerai"
   },
+  "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["linear", "tickets", "pm", "project-management", "workflow"],
+  "keywords": ["linear", "tickets", "pm", "project-management", "workflow", "triage", "sprint-planning"],
   "requires": {
-    "mcps": ["linear-mcp"]
-  }
+    "mcpServers": ["linear-mcp"]
+  },
+  "recommends": {
+    "plugins": ["aai-core"]
+  },
+  "agents": "./agents/",
+  "skills": "./skills/"
 }

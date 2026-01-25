@@ -1,12 +1,17 @@
 {
   "name": "aai-dev-database",
   "version": "1.0.0",
-  "description": "Database development agent - schema design, queries, migrations, data modeling",
+  "description": "Database development agent - technology-agnostic schema design, queries, migrations, and data modeling. Auto-detects ORM and database type.",
   "author": {
     "name": "AnswerAI",
     "url": "https://github.com/the-answerai"
   },
+  "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["database", "sql", "schema", "migrations", "development"]
+  "keywords": ["database", "schema", "migrations", "development", "stack-detection"],
+  "recommends": {
+    "plugins": ["aai-core"]
+  },
+  "agents": "./agents/"
 }
