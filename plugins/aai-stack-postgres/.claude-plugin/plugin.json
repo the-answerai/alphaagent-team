@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-postgres",
+  "version": "1.0.0",
+  "description": "PostgreSQL patterns - queries, indexes, migrations, performance tuning",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["postgres", "postgresql", "sql", "database", "patterns"]
+}

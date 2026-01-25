@@ -1,0 +1,12 @@
+{
+  "name": "aai-hooks",
+  "version": "1.0.0",
+  "description": "Standard hook scripts for development workflows - package manager enforcement, protected branch guards, code formatting, and validation",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["hooks", "validation", "formatting", "git-guards", "workflow"]
+}

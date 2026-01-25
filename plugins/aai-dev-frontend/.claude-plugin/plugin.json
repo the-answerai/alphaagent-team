@@ -1,0 +1,12 @@
+{
+  "name": "aai-dev-frontend",
+  "version": "1.0.0",
+  "description": "Frontend development agent - React, Vue, Angular component architecture and patterns",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["frontend", "react", "vue", "components", "development"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript patterns - generics, utility types, type inference, best practices",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["typescript", "types", "generics", "patterns", "development"]
+}

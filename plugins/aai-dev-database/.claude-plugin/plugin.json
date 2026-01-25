@@ -1,0 +1,12 @@
+{
+  "name": "aai-dev-database",
+  "version": "1.0.0",
+  "description": "Database development agent - schema design, queries, migrations, data modeling",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["database", "sql", "schema", "migrations", "development"]
+}

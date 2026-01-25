@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-express",
+  "version": "1.0.0",
+  "description": "Express patterns - routing, middleware, authentication, validation, error handling",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["express", "nodejs", "api", "middleware", "backend"]
+}

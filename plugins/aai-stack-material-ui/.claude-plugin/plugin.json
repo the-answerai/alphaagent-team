@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-material-ui",
+  "version": "1.0.0",
+  "description": "Material UI patterns - MUI components, theming, sx prop, styled()",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["mui", "material-ui", "react", "components", "theming"]
+}

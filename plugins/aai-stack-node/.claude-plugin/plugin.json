@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-node",
+  "version": "1.0.0",
+  "description": "Node.js patterns - streams, async patterns, error handling, performance",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["nodejs", "streams", "async", "backend", "patterns"]
+}

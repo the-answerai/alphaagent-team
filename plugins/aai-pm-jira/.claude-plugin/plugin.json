@@ -1,0 +1,12 @@
+{
+  "name": "aai-pm-jira",
+  "version": "1.0.0",
+  "description": "Jira ticket management - create, plan, and triage Jira tickets",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["jira", "tickets", "pm", "project-management", "workflow"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-playwright",
+  "version": "1.0.0",
+  "description": "Playwright testing patterns - selectors, assertions, fixtures, visual testing",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["playwright", "testing", "e2e", "automation", "selectors"]
+}

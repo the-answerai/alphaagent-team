@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-tailwind",
+  "version": "1.0.0",
+  "description": "Tailwind CSS patterns - utility-first styling, components, responsive design",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["tailwind", "css", "styling", "utility-first", "responsive"]
+}

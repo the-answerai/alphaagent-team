@@ -1,0 +1,12 @@
+{
+  "name": "aai-dev-backend",
+  "version": "1.0.0",
+  "description": "Backend development agent - Node.js, Express, API design patterns",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["backend", "nodejs", "express", "api", "development"]
+}

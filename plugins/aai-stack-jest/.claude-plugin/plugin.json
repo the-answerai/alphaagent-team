@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-jest",
+  "version": "1.0.0",
+  "description": "Jest testing patterns - test organization, mocking, async testing, coverage",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["jest", "testing", "unit-tests", "mocking", "coverage"]
+}

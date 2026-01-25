@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-typeorm",
+  "version": "1.0.0",
+  "description": "TypeORM patterns - entities, migrations, QueryBuilder patterns",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["typeorm", "orm", "database", "entities", "migrations"]
+}

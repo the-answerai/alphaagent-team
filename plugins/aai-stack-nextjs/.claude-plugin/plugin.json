@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-nextjs",
+  "version": "1.0.0",
+  "description": "Next.js patterns - App Router, Server/Client Components, API routes, middleware",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["nextjs", "react", "app-router", "server-components", "patterns"]
+}

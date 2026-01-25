@@ -1,0 +1,12 @@
+{
+  "name": "aai-core",
+  "version": "1.0.0",
+  "description": "Core development workflow - git operations, PR management, code review, and branch lifecycle",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["git", "pr", "code-review", "workflow", "core"]
+}

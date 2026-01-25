@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-vite",
+  "version": "1.0.0",
+  "description": "Vite patterns - configuration, plugins, and hot module replacement",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["vite", "bundler", "hmr", "frontend", "build"]
+}

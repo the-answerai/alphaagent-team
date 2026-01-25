@@ -1,0 +1,79 @@
+{
+  "description": "Standard development workflow hooks - branch protection, package manager enforcement, and code formatting",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/inject-project-context.cjs",
+            "timeout": 3000,
+            "description": "Inject PROJECT_CONTEXT with package manager, paths, commands, and stack info"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "pattern": "npm ",
+        "hooks": [
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-wrong-package-manager.cjs",
+            "timeout": 1000,
+            "description": "Block npm commands when pnpm/yarn/bun is the project's package manager"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "pattern": "git commit",
+        "hooks": [
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-master-commits.cjs",
+            "timeout": 2000,
+            "description": "Block direct commits to master/main branches - must use feature branches"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "pattern": "git push",
+        "hooks": [
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-master-commits.cjs",
+            "timeout": 2000,
+            "description": "Block direct pushes to master/main branches"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "pattern": "git merge",
+        "hooks": [
+          {
+            "type": "script",
+            "script": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-master-commits.cjs",
+            "timeout": 2000,
+            "description": "Block merges while on master/main"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx prettier --write \"$FILE\" 2>/dev/null || true",
+            "timeout": 5000,
+            "description": "Auto-format files after edits (if prettier is available)"
+          }
+        ]
+      }
+    ]
+  }
+}

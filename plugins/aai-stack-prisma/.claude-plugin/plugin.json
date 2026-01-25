@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-prisma",
+  "version": "1.0.0",
+  "description": "Prisma ORM patterns - schema design, queries, migrations, relations",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["prisma", "orm", "database", "schema", "migrations"]
+}

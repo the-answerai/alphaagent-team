@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-sqlite",
+  "version": "1.0.0",
+  "description": "SQLite patterns - better-sqlite3, optimization, embedded database best practices",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["sqlite", "better-sqlite3", "sql", "database", "embedded"]
+}

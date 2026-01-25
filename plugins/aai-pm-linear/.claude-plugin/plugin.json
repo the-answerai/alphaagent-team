@@ -1,0 +1,15 @@
+{
+  "name": "aai-pm-linear",
+  "version": "1.0.0",
+  "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["linear", "tickets", "pm", "project-management", "workflow"],
+  "requires": {
+    "mcps": ["linear-mcp"]
+  }
+}

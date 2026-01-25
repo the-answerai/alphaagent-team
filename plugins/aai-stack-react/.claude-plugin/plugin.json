@@ -1,0 +1,12 @@
+{
+  "name": "aai-stack-react",
+  "version": "1.0.0",
+  "description": "React patterns - component architecture, hooks, context, and testing",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["react", "hooks", "components", "frontend", "patterns"]
+}
