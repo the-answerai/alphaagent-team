@@ -33,18 +33,14 @@ alphaagent-team/
 ├── CLAUDE.md                      # This file
 ├── README.md                      # Marketplace overview
 ├── CONTRIBUTING.md                # Contribution guidelines
-├── IMPLEMENTATION_PLAN.md         # Implementation roadmap
+├── LICENSE                        # MIT License
 ├── plugin-manifest.json           # Registry of all plugins
+├── .claude-plugin/
+│   └── marketplace.json           # Claude Code marketplace config
 │
 ├── docs/
 │   ├── README.md                  # Documentation index
 │   └── claudecode/                # Claude Code official docs
-│       ├── plugins.md
-│       ├── plugins-reference.md
-│       ├── skills.md
-│       ├── subagents.md
-│       ├── hooks-reference.md
-│       └── ...
 │
 ├── plugins/
 │   ├── aai-core/                  # Core workflow
@@ -98,8 +94,7 @@ aai-example/
 │   └── skill-name/
 │       └── SKILL.md
 ├── commands/                 # Optional
-│   └── command-name/
-│       └── COMMAND.md
+│   └── command-name.md
 ├── hooks/                    # Optional
 │   ├── hooks.json
 │   └── scripts/
@@ -113,35 +108,15 @@ aai-example/
 ```json
 {
   "name": "aai-example",
-  "displayName": "AAI Example Plugin",
   "description": "What this plugin does",
   "version": "1.0.0",
   "author": {
     "name": "AnswerAI",
     "url": "https://github.com/the-answerai"
   },
-  "category": "workflow",
-  "tags": ["relevant", "tags"],
-  "requires": {
-    "mcpServers": [],
-    "plugins": []
-  },
+  "keywords": ["relevant", "tags"],
   "recommends": {
-    "mcpServers": [],
-    "plugins": []
-  },
-  "autoLoad": {
-    "when": {
-      "dependencies": [],
-      "files": []
-    }
-  },
-  "models": {
-    "default": "sonnet",
-    "configurable": true
-  },
-  "compatibility": {
-    "claudeCode": ">=1.0.33"
+    "plugins": ["aai-core"]
   }
 }
 ```
@@ -178,9 +153,6 @@ name: agent-name
 description: What this agent does
 model: sonnet
 model_configurable: true
-skills:
-  - required-skill
-  - optional-skill?
 tools:
   - Read
   - Write
@@ -193,22 +165,7 @@ tools:
 You are an expert...
 ```
 
-### 6. Command Definition (COMMAND.md)
-
-```markdown
----
-description: What this command does
-allowed_tools:
-  - Read
-  - Write
----
-
-# /command-name
-
-Instructions for what the command should do.
-```
-
-### 7. Hooks (hooks.json)
+### 6. Hooks (hooks.json)
 
 **Verify format against `docs/claudecode/hooks-reference.md`**
 
@@ -277,6 +234,7 @@ Before committing any plugin:
 4. **Keep skills focused** - One concept per skill
 5. **Make models configurable** - Allow project-level overrides
 6. **Document MCP requirements** - In plugin.json requires field
+7. **Development agents should be technology-agnostic** - Use stack-detection skill
 
 ---
 
@@ -295,30 +253,6 @@ node scripts/build-manifest.js
 # Test plugin locally
 claude --plugin-dir ./plugins/aai-core
 ```
-
----
-
-## Source Repos for Porting
-
-When creating plugins, port content from these repos:
-
-- **theanswer**: `/Users/bradtaylor/Github/theanswer/.claude/`
-- **data-sidekick**: `/Users/bradtaylor/Github/data-sidekick/.claude/`
-- **alphaagent**: `/Users/bradtaylor/Github/alphaagent/.claude/`
-- **kumello**: `/Users/bradtaylor/Github/kumello/.claude/`
-
-But remember: project-specific patterns stay in those repos.
-
----
-
-## AlphaAgent Integration
-
-This repo is read by AlphaAgent for:
-1. Plugin discovery
-2. Auto-suggestion based on detected stack
-3. Installation to project's `.claude/` directory
-
-AlphaAgent reads `plugin-manifest.json` for the registry of available plugins.
 
 ---
 
