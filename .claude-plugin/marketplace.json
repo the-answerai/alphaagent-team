@@ -6,13 +6,12 @@
   },
   "metadata": {
     "description": "AlphaAgent Team Plugin Marketplace - Claude Code plugins for autonomous coding assistance",
-    "version": "1.0.0",
-    "pluginRoot": "./plugins"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "aai-core",
-      "source": "aai-core",
+      "source": "./plugins/aai-core",
       "description": "Core development workflow - git operations, PR management, code review, and essential commands",
       "version": "1.0.0",
       "category": "workflow",
@@ -20,7 +19,7 @@
     },
     {
       "name": "aai-hooks",
-      "source": "aai-hooks",
+      "source": "./plugins/aai-hooks",
       "description": "Validation hooks - protected branch guards, completion validation, anti-pattern detection",
       "version": "1.0.0",
       "category": "workflow",
@@ -28,7 +27,7 @@
     },
     {
       "name": "aai-pm-linear",
-      "source": "aai-pm-linear",
+      "source": "./plugins/aai-pm-linear",
       "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets",
       "version": "1.0.0",
       "category": "pm",
@@ -36,7 +35,7 @@
     },
     {
       "name": "aai-pm-jira",
-      "source": "aai-pm-jira",
+      "source": "./plugins/aai-pm-jira",
       "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets",
       "version": "1.0.0",
       "category": "pm",
@@ -44,7 +43,7 @@
     },
     {
       "name": "aai-pm-github",
-      "source": "aai-pm-github",
+      "source": "./plugins/aai-pm-github",
       "description": "GitHub Issues management - triage issues, workflow automation",
       "version": "1.0.0",
       "category": "pm",
@@ -52,7 +51,7 @@
     },
     {
       "name": "aai-dev-frontend",
-      "source": "aai-dev-frontend",
+      "source": "./plugins/aai-dev-frontend",
       "description": "Frontend development agent - technology-agnostic UI component architecture and patterns",
       "version": "1.0.0",
       "category": "dev",
@@ -60,7 +59,7 @@
     },
     {
       "name": "aai-dev-backend",
-      "source": "aai-dev-backend",
+      "source": "./plugins/aai-dev-backend",
       "description": "Backend development agent - technology-agnostic API design and service patterns",
       "version": "1.0.0",
       "category": "dev",
@@ -68,7 +67,7 @@
     },
     {
       "name": "aai-dev-database",
-      "source": "aai-dev-database",
+      "source": "./plugins/aai-dev-database",
       "description": "Database development agent - technology-agnostic schema design and queries",
       "version": "1.0.0",
       "category": "dev",
@@ -76,7 +75,7 @@
     },
     {
       "name": "aai-dev-fullstack",
-      "source": "aai-dev-fullstack",
+      "source": "./plugins/aai-dev-fullstack",
       "description": "Full-stack development bundle - combines frontend, backend, and database agents",
       "version": "1.0.0",
       "category": "dev",
@@ -84,7 +83,7 @@
     },
     {
       "name": "aai-testing",
-      "source": "aai-testing",
+      "source": "./plugins/aai-testing",
       "description": "Testing agents - technology-agnostic unit, API, and E2E test specialists",
       "version": "1.0.0",
       "category": "testing",
@@ -92,7 +91,7 @@
     },
     {
       "name": "aai-architecture",
-      "source": "aai-architecture",
+      "source": "./plugins/aai-architecture",
       "description": "Architecture and design agents - system design, tech lead, requirements analysis",
       "version": "1.0.0",
       "category": "architecture",
@@ -100,7 +99,7 @@
     },
     {
       "name": "aai-docs",
-      "source": "aai-docs",
+      "source": "./plugins/aai-docs",
       "description": "Documentation agents - README updates, integration docs, API documentation",
       "version": "1.0.0",
       "category": "docs",
@@ -108,7 +107,7 @@
     },
     {
       "name": "aai-blog",
-      "source": "aai-blog",
+      "source": "./plugins/aai-blog",
       "description": "Blog and content writing - technical blog posts, tutorials, announcements",
       "version": "1.0.0",
       "category": "blog",
@@ -116,7 +115,7 @@
     },
     {
       "name": "aai-devops",
-      "source": "aai-devops",
+      "source": "./plugins/aai-devops",
       "description": "DevOps and deployment - CI/CD pipelines, deployment workflows",
       "version": "1.0.0",
       "category": "devops",
@@ -124,7 +123,7 @@
     },
     {
       "name": "aai-quality",
-      "source": "aai-quality",
+      "source": "./plugins/aai-quality",
       "description": "Quality governance - agent evaluation, quality tracking, lessons learned",
       "version": "1.0.0",
       "category": "quality",
@@ -132,7 +131,7 @@
     },
     {
       "name": "aai-stack-react",
-      "source": "aai-stack-react",
+      "source": "./plugins/aai-stack-react",
       "description": "React patterns - component architecture, hooks, context, and testing",
       "version": "1.0.0",
       "category": "stack",
@@ -140,7 +139,7 @@
     },
     {
       "name": "aai-stack-nextjs",
-      "source": "aai-stack-nextjs",
+      "source": "./plugins/aai-stack-nextjs",
       "description": "Next.js patterns - App Router, Server/Client Components, API routes",
       "version": "1.0.0",
       "category": "stack",
@@ -148,7 +147,7 @@
     },
     {
       "name": "aai-stack-vite",
-      "source": "aai-stack-vite",
+      "source": "./plugins/aai-stack-vite",
       "description": "Vite patterns - configuration, plugins, and hot module replacement",
       "version": "1.0.0",
       "category": "stack",
@@ -156,7 +155,7 @@
     },
     {
       "name": "aai-stack-express",
-      "source": "aai-stack-express",
+      "source": "./plugins/aai-stack-express",
       "description": "Express patterns - routing, middleware, authentication, validation",
       "version": "1.0.0",
       "category": "stack",
@@ -164,7 +163,7 @@
     },
     {
       "name": "aai-stack-node",
-      "source": "aai-stack-node",
+      "source": "./plugins/aai-stack-node",
       "description": "Node.js patterns - streams, async patterns, error handling",
       "version": "1.0.0",
       "category": "stack",
@@ -172,7 +171,7 @@
     },
     {
       "name": "aai-stack-typescript",
-      "source": "aai-stack-typescript",
+      "source": "./plugins/aai-stack-typescript",
       "description": "TypeScript patterns - generics, utility types, type inference",
       "version": "1.0.0",
       "category": "stack",
@@ -180,7 +179,7 @@
     },
     {
       "name": "aai-stack-postgres",
-      "source": "aai-stack-postgres",
+      "source": "./plugins/aai-stack-postgres",
       "description": "PostgreSQL patterns - queries, indexes, migrations, performance",
       "version": "1.0.0",
       "category": "stack",
@@ -188,7 +187,7 @@
     },
     {
       "name": "aai-stack-sqlite",
-      "source": "aai-stack-sqlite",
+      "source": "./plugins/aai-stack-sqlite",
       "description": "SQLite patterns - better-sqlite3, optimization, embedded database",
       "version": "1.0.0",
       "category": "stack",
@@ -196,7 +195,7 @@
     },
     {
       "name": "aai-stack-prisma",
-      "source": "aai-stack-prisma",
+      "source": "./plugins/aai-stack-prisma",
       "description": "Prisma ORM patterns - schema design, queries, migrations, relations",
       "version": "1.0.0",
       "category": "stack",
@@ -204,7 +203,7 @@
     },
     {
       "name": "aai-stack-typeorm",
-      "source": "aai-stack-typeorm",
+      "source": "./plugins/aai-stack-typeorm",
       "description": "TypeORM patterns - entities, migrations, QueryBuilder patterns",
       "version": "1.0.0",
       "category": "stack",
@@ -212,7 +211,7 @@
     },
     {
       "name": "aai-stack-tailwind",
-      "source": "aai-stack-tailwind",
+      "source": "./plugins/aai-stack-tailwind",
       "description": "Tailwind CSS patterns - utility-first styling, components, responsive",
       "version": "1.0.0",
       "category": "stack",
@@ -220,7 +219,7 @@
     },
     {
       "name": "aai-stack-material-ui",
-      "source": "aai-stack-material-ui",
+      "source": "./plugins/aai-stack-material-ui",
       "description": "Material UI patterns - MUI components, theming, sx prop",
       "version": "1.0.0",
       "category": "stack",
@@ -228,7 +227,7 @@
     },
     {
       "name": "aai-stack-playwright",
-      "source": "aai-stack-playwright",
+      "source": "./plugins/aai-stack-playwright",
       "description": "Playwright testing patterns - selectors, assertions, fixtures",
       "version": "1.0.0",
       "category": "stack",
@@ -236,7 +235,7 @@
     },
     {
       "name": "aai-stack-jest",
-      "source": "aai-stack-jest",
+      "source": "./plugins/aai-stack-jest",
       "description": "Jest testing patterns - test organization, mocking, async testing",
       "version": "1.0.0",
       "category": "stack",
@@ -244,7 +243,7 @@
     },
     {
       "name": "aai-stack-auth0",
-      "source": "aai-stack-auth0",
+      "source": "./plugins/aai-stack-auth0",
       "description": "Auth0 integration patterns - NextAuth, Express middleware, authentication",
       "version": "1.0.0",
       "category": "stack",
