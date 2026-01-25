@@ -1,0 +1,12 @@
+{
+  "name": "aai-docs",
+  "version": "1.0.0",
+  "description": "Documentation agents - README updates, integration docs, API documentation",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["documentation", "readme", "api-docs", "technical-writing", "docs"]
+}

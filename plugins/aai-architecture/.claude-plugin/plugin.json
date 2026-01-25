@@ -1,0 +1,12 @@
+{
+  "name": "aai-architecture",
+  "version": "1.0.0",
+  "description": "Architecture and design agents - system design, tech lead, requirements analysis, UX design",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["architecture", "design", "system-design", "planning", "requirements"]
+}

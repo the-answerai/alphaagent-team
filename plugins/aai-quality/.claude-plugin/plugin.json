@@ -1,0 +1,12 @@
+{
+  "name": "aai-quality",
+  "version": "1.0.0",
+  "description": "Quality governance - agent evaluation, quality tracking, lessons learned",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["quality", "governance", "evaluation", "metrics", "improvement"]
+}

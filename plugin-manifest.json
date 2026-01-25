@@ -1,0 +1,833 @@
+{
+  "$schema": "https://claude.ai/schemas/plugin-manifest.json",
+  "name": "alphaagent-team",
+  "displayName": "AlphaAgent Team Plugin Marketplace",
+  "description": "Official plugin marketplace for AlphaAgent - autonomous coding assistant plugins",
+  "version": "1.0.0",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "plugins": [
+    {
+      "name": "aai-architecture",
+      "version": "1.0.0",
+      "description": "Architecture and design agents - system design, tech lead, requirements analysis, UX design",
+      "category": "architecture",
+      "source": "./plugins/aai-architecture",
+      "keywords": [
+        "architecture",
+        "design",
+        "system-design",
+        "planning",
+        "requirements"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-blog",
+      "version": "1.0.0",
+      "description": "Blog and content writing - technical blog posts, tutorials, announcements",
+      "category": "blog",
+      "source": "./plugins/aai-blog",
+      "keywords": [
+        "blog",
+        "content",
+        "writing",
+        "tutorials",
+        "technical-writing"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 2,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-core",
+      "version": "1.0.0",
+      "description": "Core development workflow - git operations, PR management, code review, and branch lifecycle",
+      "category": "workflow",
+      "source": "./plugins/aai-core",
+      "keywords": [
+        "git",
+        "pr",
+        "code-review",
+        "workflow",
+        "core"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 2,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-dev-backend",
+      "version": "1.0.0",
+      "description": "Backend development agent - Node.js, Express, API design patterns",
+      "category": "dev",
+      "source": "./plugins/aai-dev-backend",
+      "keywords": [
+        "backend",
+        "nodejs",
+        "express",
+        "api",
+        "development"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 1,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-dev-database",
+      "version": "1.0.0",
+      "description": "Database development agent - schema design, queries, migrations, data modeling",
+      "category": "dev",
+      "source": "./plugins/aai-dev-database",
+      "keywords": [
+        "database",
+        "sql",
+        "schema",
+        "migrations",
+        "development"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 1,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-dev-frontend",
+      "version": "1.0.0",
+      "description": "Frontend development agent - React, Vue, Angular component architecture and patterns",
+      "category": "dev",
+      "source": "./plugins/aai-dev-frontend",
+      "keywords": [
+        "frontend",
+        "react",
+        "vue",
+        "components",
+        "development"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 1,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-dev-fullstack",
+      "version": "1.0.0",
+      "description": "Full-stack development bundle - combines frontend, backend, and database agents",
+      "category": "dev",
+      "source": "./plugins/aai-dev-fullstack",
+      "keywords": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "database",
+        "development"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 1,
+        "skills": 1,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-devops",
+      "version": "1.0.0",
+      "description": "DevOps and deployment - CI/CD pipelines, project coordination, deployment workflows",
+      "category": "devops",
+      "source": "./plugins/aai-devops",
+      "keywords": [
+        "devops",
+        "cicd",
+        "deployment",
+        "docker",
+        "pipelines"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-docs",
+      "version": "1.0.0",
+      "description": "Documentation agents - README updates, integration docs, API documentation",
+      "category": "docs",
+      "source": "./plugins/aai-docs",
+      "keywords": [
+        "documentation",
+        "readme",
+        "api-docs",
+        "technical-writing",
+        "docs"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-hooks",
+      "version": "1.0.0",
+      "description": "Standard hook scripts for development workflows - package manager enforcement, protected branch guards, code formatting, and validation",
+      "category": "workflow",
+      "source": "./plugins/aai-hooks",
+      "keywords": [
+        "hooks",
+        "validation",
+        "formatting",
+        "git-guards",
+        "workflow"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 0,
+        "commands": 0,
+        "hooks": true
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-pm-github",
+      "version": "1.0.0",
+      "description": "GitHub Issues management - triage issues, create Linear tickets, close fixed/outdated issues",
+      "category": "pm",
+      "source": "./plugins/aai-pm-github",
+      "keywords": [
+        "github",
+        "issues",
+        "pm",
+        "triage",
+        "workflow"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 1,
+        "skills": 2,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {
+        "mcps": [
+          "linear-mcp"
+        ]
+      },
+      "autoLoad": null
+    },
+    {
+      "name": "aai-pm-jira",
+      "version": "1.0.0",
+      "description": "Jira ticket management - create, plan, and triage Jira tickets",
+      "category": "pm",
+      "source": "./plugins/aai-pm-jira",
+      "keywords": [
+        "jira",
+        "tickets",
+        "pm",
+        "project-management",
+        "workflow"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 0,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-pm-linear",
+      "version": "1.0.0",
+      "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets",
+      "category": "pm",
+      "source": "./plugins/aai-pm-linear",
+      "keywords": [
+        "linear",
+        "tickets",
+        "pm",
+        "project-management",
+        "workflow"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 4,
+        "skills": 7,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {
+        "mcps": [
+          "linear-mcp"
+        ]
+      },
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-quality",
+      "version": "1.0.0",
+      "description": "Quality governance - agent evaluation, quality tracking, lessons learned",
+      "category": "quality",
+      "source": "./plugins/aai-quality",
+      "keywords": [
+        "quality",
+        "governance",
+        "evaluation",
+        "metrics",
+        "improvement"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-auth0",
+      "version": "1.0.0",
+      "description": "Auth0 integration patterns - NextAuth, Express middleware, authentication flows",
+      "category": "stack",
+      "source": "./plugins/aai-stack-auth0",
+      "keywords": [
+        "auth0",
+        "authentication",
+        "oauth",
+        "nextauth",
+        "security"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-express",
+      "version": "1.0.0",
+      "description": "Express patterns - routing, middleware, authentication, validation, error handling",
+      "category": "stack",
+      "source": "./plugins/aai-stack-express",
+      "keywords": [
+        "express",
+        "nodejs",
+        "api",
+        "middleware",
+        "backend"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 5,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-jest",
+      "version": "1.0.0",
+      "description": "Jest testing patterns - test organization, mocking, async testing, coverage",
+      "category": "stack",
+      "source": "./plugins/aai-stack-jest",
+      "keywords": [
+        "jest",
+        "testing",
+        "unit-tests",
+        "mocking",
+        "coverage"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-material-ui",
+      "version": "1.0.0",
+      "description": "Material UI patterns - MUI components, theming, sx prop, styled()",
+      "category": "stack",
+      "source": "./plugins/aai-stack-material-ui",
+      "keywords": [
+        "mui",
+        "material-ui",
+        "react",
+        "components",
+        "theming"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-nextjs",
+      "version": "1.0.0",
+      "description": "Next.js patterns - App Router, Server/Client Components, API routes, middleware",
+      "category": "stack",
+      "source": "./plugins/aai-stack-nextjs",
+      "keywords": [
+        "nextjs",
+        "react",
+        "app-router",
+        "server-components",
+        "patterns"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 6,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-node",
+      "version": "1.0.0",
+      "description": "Node.js patterns - streams, async patterns, error handling, performance",
+      "category": "stack",
+      "source": "./plugins/aai-stack-node",
+      "keywords": [
+        "nodejs",
+        "streams",
+        "async",
+        "backend",
+        "patterns"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-playwright",
+      "version": "1.0.0",
+      "description": "Playwright testing patterns - selectors, assertions, fixtures, visual testing",
+      "category": "stack",
+      "source": "./plugins/aai-stack-playwright",
+      "keywords": [
+        "playwright",
+        "testing",
+        "e2e",
+        "automation",
+        "selectors"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 5,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-postgres",
+      "version": "1.0.0",
+      "description": "PostgreSQL patterns - queries, indexes, migrations, performance tuning",
+      "category": "stack",
+      "source": "./plugins/aai-stack-postgres",
+      "keywords": [
+        "postgres",
+        "postgresql",
+        "sql",
+        "database",
+        "patterns"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-prisma",
+      "version": "1.0.0",
+      "description": "Prisma ORM patterns - schema design, queries, migrations, relations",
+      "category": "stack",
+      "source": "./plugins/aai-stack-prisma",
+      "keywords": [
+        "prisma",
+        "orm",
+        "database",
+        "schema",
+        "migrations"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-react",
+      "version": "1.0.0",
+      "description": "React patterns - component architecture, hooks, context, and testing",
+      "category": "stack",
+      "source": "./plugins/aai-stack-react",
+      "keywords": [
+        "react",
+        "hooks",
+        "components",
+        "frontend",
+        "patterns"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 5,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-sqlite",
+      "version": "1.0.0",
+      "description": "SQLite patterns - better-sqlite3, optimization, embedded database best practices",
+      "category": "stack",
+      "source": "./plugins/aai-stack-sqlite",
+      "keywords": [
+        "sqlite",
+        "better-sqlite3",
+        "sql",
+        "database",
+        "embedded"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-tailwind",
+      "version": "1.0.0",
+      "description": "Tailwind CSS patterns - utility-first styling, components, responsive design",
+      "category": "stack",
+      "source": "./plugins/aai-stack-tailwind",
+      "keywords": [
+        "tailwind",
+        "css",
+        "styling",
+        "utility-first",
+        "responsive"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-typeorm",
+      "version": "1.0.0",
+      "description": "TypeORM patterns - entities, migrations, QueryBuilder patterns",
+      "category": "stack",
+      "source": "./plugins/aai-stack-typeorm",
+      "keywords": [
+        "typeorm",
+        "orm",
+        "database",
+        "entities",
+        "migrations"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-typescript",
+      "version": "1.0.0",
+      "description": "TypeScript patterns - generics, utility types, type inference, best practices",
+      "category": "stack",
+      "source": "./plugins/aai-stack-typescript",
+      "keywords": [
+        "typescript",
+        "types",
+        "generics",
+        "patterns",
+        "development"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 4,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-vite",
+      "version": "1.0.0",
+      "description": "Vite patterns - configuration, plugins, and hot module replacement",
+      "category": "stack",
+      "source": "./plugins/aai-stack-vite",
+      "keywords": [
+        "vite",
+        "bundler",
+        "hmr",
+        "frontend",
+        "build"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-testing",
+      "version": "1.0.0",
+      "description": "Testing agents and QA - unit, API, E2E test specialists and test automation patterns",
+      "category": "testing",
+      "source": "./plugins/aai-testing",
+      "keywords": [
+        "testing",
+        "qa",
+        "unit-tests",
+        "e2e",
+        "automation"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 3,
+        "commands": 0,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {},
+      "autoLoad": null
+    }
+  ],
+  "generatedAt": "2026-01-25T00:54:41.159Z"
+}

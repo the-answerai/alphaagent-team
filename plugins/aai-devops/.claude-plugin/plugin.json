@@ -1,0 +1,12 @@
+{
+  "name": "aai-devops",
+  "version": "1.0.0",
+  "description": "DevOps and deployment - CI/CD pipelines, project coordination, deployment workflows",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["devops", "cicd", "deployment", "docker", "pipelines"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "aai-blog",
+  "version": "1.0.0",
+  "description": "Blog and content writing - technical blog posts, tutorials, announcements",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": ["blog", "content", "writing", "tutorials", "technical-writing"]
+}
