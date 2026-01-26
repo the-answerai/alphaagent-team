@@ -1,7 +1,6 @@
 ---
 name: system-design-patterns
 description: Common system design patterns and architectures
-user-invocable: false
 ---
 
 # System Design Patterns Skill

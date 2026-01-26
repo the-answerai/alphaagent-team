@@ -1,7 +1,6 @@
 ---
 name: coverage-analysis
 description: Code coverage analysis and improvement patterns
-user-invocable: false
 ---
 
 # Coverage Analysis Skill

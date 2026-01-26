@@ -1,7 +1,6 @@
 ---
 name: architecture-decisions
 description: Architecture Decision Records (ADR) patterns
-user-invocable: false
 ---
 
 # Architecture Decisions Skill

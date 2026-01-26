@@ -1,7 +1,6 @@
 ---
 name: technical-writing
 description: Technical writing standards and best practices
-user-invocable: false
 ---
 
 # Technical Writing Skill

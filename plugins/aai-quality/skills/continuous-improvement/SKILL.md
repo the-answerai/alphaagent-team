@@ -1,7 +1,6 @@
 ---
 name: continuous-improvement
 description: Continuous improvement processes and patterns
-user-invocable: false
 ---
 
 # Continuous Improvement Skill

@@ -1,7 +1,6 @@
 ---
 name: technical-planning
 description: Sprint planning and technical roadmap patterns
-user-invocable: false
 ---
 
 # Technical Planning Skill

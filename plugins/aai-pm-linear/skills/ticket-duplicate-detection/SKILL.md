@@ -1,7 +1,6 @@
 ---
 name: ticket-duplicate-detection
-description: Detects similar/duplicate tickets before creating new ones. Reference skill for agents.
-user-invocable: false
+description: Detects similar/duplicate tickets before creating new ones.
 ---
 
 # Ticket Duplicate Detection Skill

@@ -1,7 +1,6 @@
 ---
 name: ticket-planning-workflow
-description: Patterns for creating well-researched Linear tickets with codebase context. Reference skill for agents.
-user-invocable: false
+description: Patterns for creating well-researched Linear tickets with codebase context.
 ---
 
 # Ticket Planning Workflow Skill

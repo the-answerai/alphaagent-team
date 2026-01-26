@@ -1,7 +1,6 @@
 ---
 name: content-planning
 description: Content strategy and planning patterns
-user-invocable: false
 ---
 
 # Content Planning Skill

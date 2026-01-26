@@ -1,7 +1,6 @@
 ---
 name: quality-metrics
 description: Software quality metrics and measurement
-user-invocable: false
 ---
 
 # Quality Metrics Skill

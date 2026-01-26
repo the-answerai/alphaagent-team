@@ -1,7 +1,6 @@
 ---
 name: github-actions
 description: GitHub Actions workflow patterns
-user-invocable: false
 ---
 
 # GitHub Actions Skill

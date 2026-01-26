@@ -1,7 +1,6 @@
 ---
 name: changelog-management
 description: Changelog and release notes patterns
-user-invocable: false
 ---
 
 # Changelog Management Skill

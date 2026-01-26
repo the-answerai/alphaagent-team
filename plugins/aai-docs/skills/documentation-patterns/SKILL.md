@@ -1,7 +1,6 @@
 ---
 name: documentation-patterns
 description: Documentation structure and organization patterns
-user-invocable: false
 ---
 
 # Documentation Patterns Skill

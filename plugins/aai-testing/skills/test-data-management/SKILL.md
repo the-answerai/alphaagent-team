@@ -1,7 +1,6 @@
 ---
 name: test-data-management
 description: Test data creation and management patterns
-user-invocable: false
 ---
 
 # Test Data Management Skill

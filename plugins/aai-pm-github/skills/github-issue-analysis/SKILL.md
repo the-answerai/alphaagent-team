@@ -1,7 +1,6 @@
 ---
 name: github-issue-analysis
-description: Patterns for analyzing GitHub issues to determine if they are still relevant or have been fixed. Reference skill for agents.
-user-invocable: false
+description: Patterns for analyzing GitHub issues to determine if they are still relevant or have been fixed.
 ---
 
 # GitHub Issue Analysis Skill

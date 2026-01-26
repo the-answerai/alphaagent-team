@@ -1,7 +1,6 @@
 ---
 name: deployment-strategies
 description: Deployment strategies and patterns
-user-invocable: false
 ---
 
 # Deployment Strategies Skill

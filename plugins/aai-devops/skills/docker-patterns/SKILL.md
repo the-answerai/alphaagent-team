@@ -1,7 +1,6 @@
 ---
 name: docker-patterns
 description: Docker containerization patterns
-user-invocable: false
 ---
 
 # Docker Patterns Skill

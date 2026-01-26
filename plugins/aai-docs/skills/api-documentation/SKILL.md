@@ -1,7 +1,6 @@
 ---
 name: api-documentation
 description: API documentation standards and patterns
-user-invocable: false
 ---
 
 # API Documentation Skill

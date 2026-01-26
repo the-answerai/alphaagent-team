@@ -1,7 +1,6 @@
 ---
 name: evaluation-frameworks
 description: Evaluation frameworks and assessment methodologies
-user-invocable: false
 ---
 
 # Evaluation Frameworks Skill

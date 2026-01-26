@@ -1,7 +1,6 @@
 ---
 name: test-strategy
 description: Test planning and strategy patterns
-user-invocable: false
 ---
 
 # Test Strategy Skill
