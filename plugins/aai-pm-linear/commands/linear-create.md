@@ -1,16 +1,16 @@
 ---
-name: ticket-create
 description: Create a new Linear ticket with guided prompts and optional immediate work start
+argument-hint: [optional description]
 ---
 
-# /ticket-create - Create Linear Ticket
+# /linear-create - Create Linear Ticket
 
 Create a new Linear ticket using the `linear-ticket-creator` agent.
 
 ## Usage
 
 ```
-/ticket-create [optional description]
+/linear-create [optional description]
 ```
 
 ## Workflow
@@ -24,7 +24,7 @@ The agent will:
 4. Suggest appropriate labels, team, and priority
 5. Draft a comprehensive ticket description
 6. Create the ticket in Linear
-7. Offer to start work immediately with `/ticket-start`
+7. Offer to start work immediately with `/linear-start`
 
 ## Screenshot Handling
 

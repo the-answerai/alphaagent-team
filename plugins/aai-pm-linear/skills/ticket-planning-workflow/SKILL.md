@@ -1,6 +1,7 @@
 ---
 name: ticket-planning-workflow
 description: Patterns for creating well-researched Linear tickets with codebase context.
+user-invocable: false
 ---
 
 # Ticket Planning Workflow Skill

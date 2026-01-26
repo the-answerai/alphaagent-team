@@ -1,6 +1,7 @@
 ---
 name: ticket-status-sync
 description: Synchronizes Linear ticket status with git workflow events.
+user-invocable: false
 ---
 
 # Ticket Status Sync Skill

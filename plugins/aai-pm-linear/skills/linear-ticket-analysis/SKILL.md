@@ -1,6 +1,7 @@
 ---
 name: linear-ticket-analysis
 description: Methodology for analyzing Linear tickets to find duplicates, check relevance, and determine if issues have been fixed.
+user-invocable: false
 ---
 
 # Linear Ticket Analysis Skill

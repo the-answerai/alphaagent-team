@@ -3,16 +3,16 @@ description: Start working on a Linear ticket with automated branch creation and
 argument-hint: <ticket-id-or-url>
 ---
 
-# /ticket-start - Start Working on Linear Ticket
+# /linear-start - Start Working on Linear Ticket
 
 Begin implementation on a specific Linear ticket.
 
 ## Usage
 
 ```
-/ticket-start <ticket-id>
-/ticket-start LIN-123
-/ticket-start https://linear.app/team/issue/LIN-123
+/linear-start <ticket-id>
+/linear-start LIN-123
+/linear-start https://linear.app/team/issue/LIN-123
 ```
 
 ## Workflow
