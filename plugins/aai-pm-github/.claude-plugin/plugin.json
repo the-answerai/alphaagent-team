@@ -8,18 +8,5 @@
   },
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["github", "issues", "pm", "triage", "workflow", "git"],
-  "recommends": {
-    "plugins": ["aai-core"]
-  },
-  "agents": "./agents/",
-  "skills": "./skills/",
-  "autoLoad": {
-    "when": {
-      "files": [".github/ISSUE_TEMPLATE", ".github/workflows"]
-    }
-  },
-  "compatibility": {
-    "claudeCode": ">=1.0.33"
-  }
+  "keywords": ["github", "issues", "pm", "triage", "workflow", "git"]
 }

@@ -9,9 +9,5 @@
   "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["database", "schema", "migrations", "development", "stack-detection"],
-  "recommends": {
-    "plugins": ["aai-core"]
-  },
-  "agents": "./agents/"
+  "keywords": ["database", "schema", "migrations", "development", "stack-detection"]
 }

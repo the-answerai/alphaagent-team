@@ -9,9 +9,5 @@
   "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["frontend", "ui", "components", "development", "stack-detection"],
-  "recommends": {
-    "plugins": ["aai-core"]
-  },
-  "agents": "./agents/"
+  "keywords": ["frontend", "ui", "components", "development", "stack-detection"]
 }

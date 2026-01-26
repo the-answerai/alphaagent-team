@@ -9,13 +9,5 @@
   "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["linear", "tickets", "pm", "project-management", "workflow", "triage", "sprint-planning"],
-  "requires": {
-    "mcpServers": ["linear-mcp"]
-  },
-  "recommends": {
-    "plugins": ["aai-core"]
-  },
-  "agents": "./agents/",
-  "skills": "./skills/"
+  "keywords": ["linear", "tickets", "pm", "project-management", "workflow", "triage", "sprint-planning"]
 }

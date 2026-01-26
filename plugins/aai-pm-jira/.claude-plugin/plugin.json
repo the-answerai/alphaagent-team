@@ -8,18 +8,5 @@
   },
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["jira", "tickets", "pm", "project-management", "workflow", "atlassian"],
-  "requires": {
-    "mcpServers": ["atlassian-mcp"]
-  },
-  "recommends": {
-    "plugins": ["aai-core"]
-  },
-  "autoLoad": {
-    "when": {
-      "files": [".jira", "jira.config.js", "atlassian-config.json"]
-    }
-  },
-  "agents": "./agents/",
-  "skills": "./skills/"
+  "keywords": ["jira", "tickets", "pm", "project-management", "workflow", "atlassian"]
 }

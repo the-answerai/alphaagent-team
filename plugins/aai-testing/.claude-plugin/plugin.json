@@ -9,9 +9,5 @@
   "homepage": "https://github.com/the-answerai/alphaagent-team#readme",
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["testing", "qa", "unit-tests", "e2e", "automation", "stack-detection"],
-  "recommends": {
-    "plugins": ["aai-core"]
-  },
-  "agents": "./agents/"
+  "keywords": ["testing", "qa", "unit-tests", "e2e", "automation", "stack-detection"]
 }
