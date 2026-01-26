@@ -2,14 +2,7 @@
 name: fullstack-developer
 description: Expert fullstack developer combining frontend, backend, and database expertise. Use for end-to-end feature implementation, system architecture, and cross-layer coordination.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Write
-  - Edit
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Write, Edit, Glob, Grep, Bash
 skills:
   - component-architecture
   - state-management

@@ -2,14 +2,7 @@
 name: backend-developer
 description: Expert backend developer specializing in server-side architecture, APIs, and services. Use for API design, authentication, database integration, and backend best practices.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Write
-  - Edit
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Write, Edit, Glob, Grep, Bash
 skills:
   - api-design
   - authentication-patterns

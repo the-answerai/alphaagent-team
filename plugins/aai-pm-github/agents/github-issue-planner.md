@@ -2,14 +2,7 @@
 name: github-issue-planner
 description: Plans implementation for GitHub issues with codebase exploration, creates branches, and provides structured implementation plans. Use when starting work on a GitHub issue.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Write
-  - Edit
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Write, Edit, Glob, Grep, Bash
 skills:
   - issue-planning-workflow
   - issue-status-sync

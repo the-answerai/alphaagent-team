@@ -2,12 +2,7 @@
 name: jira-ticket-creator
 description: Creates well-researched Jira tickets with codebase exploration and duplicate detection. Use when user wants to create a ticket, file an issue, or document a bug/feature in Jira.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Glob, Grep, Bash
 skills:
   - jira-ticket-create
   - jira-duplicate-detection

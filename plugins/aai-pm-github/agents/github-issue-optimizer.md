@@ -2,12 +2,7 @@
 name: github-issue-optimizer
 description: Improves GitHub issue quality by analyzing and enhancing descriptions, acceptance criteria, and labels. Use when issues need refinement.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Glob, Grep, Bash
 skills:
   - github-issue-analysis
 ---

@@ -2,11 +2,7 @@
 name: jira-ticket-optimizer
 description: Improves Jira ticket quality by analyzing and enhancing descriptions, acceptance criteria, and estimates. Use when tickets need refinement.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Glob
-  - Grep
+tools: Read, Glob, Grep
 skills:
   - jira-ticket-analysis
 ---

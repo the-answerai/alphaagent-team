@@ -2,14 +2,7 @@
 name: frontend-developer
 description: Expert frontend developer specializing in modern web frameworks and UI/UX implementation. Use for component architecture, state management, styling, and frontend best practices.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Write
-  - Edit
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Write, Edit, Glob, Grep, Bash
 skills:
   - component-architecture
   - state-management

@@ -2,12 +2,7 @@
 name: github-issue-creator
 description: Creates well-researched GitHub issues with codebase exploration and duplicate detection. Use when user wants to create an issue, file a bug, or request a feature on GitHub.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Glob, Grep, Bash
 skills:
   - issue-create
   - issue-duplicate-detection

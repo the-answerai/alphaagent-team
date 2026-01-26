@@ -2,11 +2,7 @@
 name: jira-ticket-triager
 description: Triages and categorizes Jira tickets - assigns priority, labels, components, and routes to appropriate teams. Use for backlog grooming and ticket organization.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Glob
-  - Grep
+tools: Read, Glob, Grep
 skills:
   - jira-triage
   - jira-ticket-analysis

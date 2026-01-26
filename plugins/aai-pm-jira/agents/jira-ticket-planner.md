@@ -2,14 +2,7 @@
 name: jira-ticket-planner
 description: Plans implementation for Jira tickets with codebase exploration, creates branches, and updates ticket status. Use when starting work on a Jira ticket.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Write
-  - Edit
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Write, Edit, Glob, Grep, Bash
 skills:
   - jira-sprint-planning
   - jira-status-sync

@@ -2,14 +2,7 @@
 name: database-developer
 description: Expert database developer specializing in schema design, query optimization, and data modeling. Use for database architecture, migrations, performance tuning, and data layer best practices.
 model: sonnet
-model_configurable: true
-tools:
-  - Read
-  - Write
-  - Edit
-  - Glob
-  - Grep
-  - Bash
+tools: Read, Write, Edit, Glob, Grep, Bash
 skills:
   - schema-design
   - query-optimization
