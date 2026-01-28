@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "AlphaAgent Team Plugin Marketplace - Claude Code plugins for autonomous coding assistance",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   "plugins": [
     {
@@ -248,6 +248,14 @@
       "version": "1.0.0",
       "category": "stack",
       "tags": ["auth0", "authentication", "oauth", "security"]
+    },
+    {
+      "name": "aai-stack-electron",
+      "source": "./plugins/aai-stack-electron",
+      "description": "Electron desktop app packaging - convert web apps to cross-platform desktop applications",
+      "version": "1.0.0",
+      "category": "stack",
+      "tags": ["electron", "desktop", "packaging", "cross-platform", "native-modules"]
     }
   ]
 }
