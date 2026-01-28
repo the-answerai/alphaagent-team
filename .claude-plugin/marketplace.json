@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "AlphaAgent Team Plugin Marketplace - Claude Code plugins for autonomous coding assistance",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
