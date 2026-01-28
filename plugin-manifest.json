@@ -30,7 +30,7 @@
       "components": {
         "agents": 0,
         "skills": 3,
-        "commands": 0,
+        "commands": 1,
         "hooks": false
       },
       "requires": {},
@@ -57,7 +57,7 @@
       "components": {
         "agents": 0,
         "skills": 2,
-        "commands": 0,
+        "commands": 4,
         "hooks": false
       },
       "requires": {},
@@ -67,7 +67,7 @@
     {
       "name": "aai-core",
       "version": "1.0.0",
-      "description": "Core development workflow - git operations, PR management, code review, and branch lifecycle",
+      "description": "Core development workflow - git operations, PR management, code review, security analysis, API patterns, and branch lifecycle",
       "category": "workflow",
       "source": "./plugins/aai-core",
       "keywords": [
@@ -75,7 +75,10 @@
         "pr",
         "code-review",
         "workflow",
-        "core"
+        "core",
+        "security",
+        "api",
+        "stack-detection"
       ],
       "author": {
         "name": "AnswerAI",
@@ -83,8 +86,8 @@
       },
       "components": {
         "agents": 2,
-        "skills": 4,
-        "commands": 0,
+        "skills": 8,
+        "commands": 5,
         "hooks": false
       },
       "requires": {},
@@ -94,15 +97,15 @@
     {
       "name": "aai-dev-backend",
       "version": "1.0.0",
-      "description": "Backend development agent - Node.js, Express, API design patterns",
+      "description": "Backend development agent - technology-agnostic API design, service architecture, and patterns. Auto-detects project stack.",
       "category": "dev",
       "source": "./plugins/aai-dev-backend",
       "keywords": [
         "backend",
-        "nodejs",
-        "express",
         "api",
-        "development"
+        "services",
+        "development",
+        "stack-detection"
       ],
       "author": {
         "name": "AnswerAI",
@@ -121,15 +124,15 @@
     {
       "name": "aai-dev-database",
       "version": "1.0.0",
-      "description": "Database development agent - schema design, queries, migrations, data modeling",
+      "description": "Database development agent - technology-agnostic schema design, queries, migrations, and data modeling. Auto-detects ORM and database type.",
       "category": "dev",
       "source": "./plugins/aai-dev-database",
       "keywords": [
         "database",
-        "sql",
         "schema",
         "migrations",
-        "development"
+        "development",
+        "stack-detection"
       ],
       "author": {
         "name": "AnswerAI",
@@ -148,15 +151,15 @@
     {
       "name": "aai-dev-frontend",
       "version": "1.0.0",
-      "description": "Frontend development agent - React, Vue, Angular component architecture and patterns",
+      "description": "Frontend development agent - technology-agnostic UI component architecture, state management, and patterns. Auto-detects project stack.",
       "category": "dev",
       "source": "./plugins/aai-dev-frontend",
       "keywords": [
         "frontend",
-        "react",
-        "vue",
+        "ui",
         "components",
-        "development"
+        "development",
+        "stack-detection"
       ],
       "author": {
         "name": "AnswerAI",
@@ -219,7 +222,7 @@
       "components": {
         "agents": 0,
         "skills": 3,
-        "commands": 0,
+        "commands": 3,
         "hooks": false
       },
       "requires": {},
@@ -246,7 +249,7 @@
       "components": {
         "agents": 0,
         "skills": 3,
-        "commands": 0,
+        "commands": 3,
         "hooks": false
       },
       "requires": {},
@@ -256,7 +259,7 @@
     {
       "name": "aai-hooks",
       "version": "1.0.0",
-      "description": "Standard hook scripts for development workflows - package manager enforcement, protected branch guards, code formatting, and validation",
+      "description": "Standard hook scripts for development workflows - package manager enforcement, protected branch guards, code formatting, anti-pattern detection, and completion claim validation",
       "category": "workflow",
       "source": "./plugins/aai-hooks",
       "keywords": [
@@ -264,7 +267,9 @@
         "validation",
         "formatting",
         "git-guards",
-        "workflow"
+        "workflow",
+        "anti-patterns",
+        "completion-verification"
       ],
       "author": {
         "name": "AnswerAI",
@@ -283,7 +288,7 @@
     {
       "name": "aai-pm-github",
       "version": "1.0.0",
-      "description": "GitHub Issues management - triage issues, create Linear tickets, close fixed/outdated issues",
+      "description": "GitHub Issues management - create, plan, optimize, and triage GitHub issues with codebase exploration and duplicate detection",
       "category": "pm",
       "source": "./plugins/aai-pm-github",
       "keywords": [
@@ -291,30 +296,27 @@
         "issues",
         "pm",
         "triage",
-        "workflow"
+        "workflow",
+        "git"
       ],
       "author": {
         "name": "AnswerAI",
         "url": "https://github.com/the-answerai"
       },
       "components": {
-        "agents": 1,
-        "skills": 2,
-        "commands": 0,
+        "agents": 4,
+        "skills": 4,
+        "commands": 3,
         "hooks": false
       },
       "requires": {},
-      "recommends": {
-        "mcps": [
-          "linear-mcp"
-        ]
-      },
+      "recommends": {},
       "autoLoad": null
     },
     {
       "name": "aai-pm-jira",
       "version": "1.0.0",
-      "description": "Jira ticket management - create, plan, and triage Jira tickets",
+      "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets with codebase exploration and duplicate detection",
       "category": "pm",
       "source": "./plugins/aai-pm-jira",
       "keywords": [
@@ -322,16 +324,17 @@
         "tickets",
         "pm",
         "project-management",
-        "workflow"
+        "workflow",
+        "atlassian"
       ],
       "author": {
         "name": "AnswerAI",
         "url": "https://github.com/the-answerai"
       },
       "components": {
-        "agents": 0,
-        "skills": 0,
-        "commands": 0,
+        "agents": 4,
+        "skills": 5,
+        "commands": 3,
         "hooks": false
       },
       "requires": {},
@@ -341,7 +344,7 @@
     {
       "name": "aai-pm-linear",
       "version": "1.0.0",
-      "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets",
+      "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets with codebase exploration and duplicate detection",
       "category": "pm",
       "source": "./plugins/aai-pm-linear",
       "keywords": [
@@ -349,7 +352,9 @@
         "tickets",
         "pm",
         "project-management",
-        "workflow"
+        "workflow",
+        "triage",
+        "sprint-planning"
       ],
       "author": {
         "name": "AnswerAI",
@@ -357,15 +362,11 @@
       },
       "components": {
         "agents": 4,
-        "skills": 7,
-        "commands": 0,
+        "skills": 4,
+        "commands": 3,
         "hooks": false
       },
-      "requires": {
-        "mcps": [
-          "linear-mcp"
-        ]
-      },
+      "requires": {},
       "recommends": {},
       "autoLoad": null
     },
@@ -389,7 +390,7 @@
       "components": {
         "agents": 0,
         "skills": 3,
-        "commands": 0,
+        "commands": 1,
         "hooks": false
       },
       "requires": {},
@@ -421,6 +422,40 @@
       },
       "requires": {},
       "recommends": {},
+      "autoLoad": null
+    },
+    {
+      "name": "aai-stack-electron",
+      "version": "1.0.0",
+      "description": "Electron desktop app packaging - convert web apps to cross-platform desktop applications with Claude Code CLI integration",
+      "category": "stack",
+      "source": "./plugins/aai-stack-electron",
+      "keywords": [
+        "electron",
+        "desktop",
+        "packaging",
+        "cross-platform",
+        "native-modules",
+        "keychain",
+        "claude-cli"
+      ],
+      "author": {
+        "name": "AnswerAI",
+        "url": "https://github.com/the-answerai"
+      },
+      "components": {
+        "agents": 0,
+        "skills": 5,
+        "commands": 3,
+        "hooks": false
+      },
+      "requires": {},
+      "recommends": {
+        "plugins": [
+          "aai-stack-typescript",
+          "aai-stack-node"
+        ]
+      },
       "autoLoad": null
     },
     {
@@ -804,7 +839,7 @@
     {
       "name": "aai-testing",
       "version": "1.0.0",
-      "description": "Testing agents and QA - unit, API, E2E test specialists and test automation patterns",
+      "description": "Testing agents and QA - technology-agnostic unit, API, and E2E test specialists. Auto-detects testing framework.",
       "category": "testing",
       "source": "./plugins/aai-testing",
       "keywords": [
@@ -812,7 +847,8 @@
         "qa",
         "unit-tests",
         "e2e",
-        "automation"
+        "automation",
+        "stack-detection"
       ],
       "author": {
         "name": "AnswerAI",
@@ -821,7 +857,7 @@
       "components": {
         "agents": 0,
         "skills": 3,
-        "commands": 0,
+        "commands": 4,
         "hooks": false
       },
       "requires": {},
@@ -829,5 +865,5 @@
       "autoLoad": null
     }
   ],
-  "generatedAt": "2026-01-25T00:54:41.159Z"
+  "generatedAt": "2026-01-28T00:03:07.036Z"
 }

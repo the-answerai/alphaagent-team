@@ -1,0 +1,23 @@
+{
+  "name": "aai-stack-electron",
+  "version": "1.0.0",
+  "description": "Electron desktop app packaging - convert web apps to cross-platform desktop applications with Claude Code CLI integration",
+  "author": {
+    "name": "AnswerAI",
+    "url": "https://github.com/the-answerai"
+  },
+  "repository": "https://github.com/the-answerai/alphaagent-team",
+  "license": "MIT",
+  "keywords": [
+    "electron",
+    "desktop",
+    "packaging",
+    "cross-platform",
+    "native-modules",
+    "keychain",
+    "claude-cli"
+  ],
+  "recommends": {
+    "plugins": ["aai-stack-typescript", "aai-stack-node"]
+  }
+}
