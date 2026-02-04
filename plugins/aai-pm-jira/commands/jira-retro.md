@@ -1,6 +1,6 @@
 ---
 description: Generate a sprint/project retrospective report from Jira with time tracking and blocker analysis
-argument-hint: [project-key-or-account] [start-date] [end-date] [output-file]
+argument-hint: [project-key] [start-date] [end-date] [output-file]
 ---
 
 # /jira-retro - Generate Retrospective Report
@@ -10,7 +10,7 @@ Generate a comprehensive retrospective report from Jira data including completed
 ## Usage
 
 ```bash
-/jira-retro [project-key-or-account] [start-date] [end-date] [output-file]
+/jira-retro [project-key] [start-date] [end-date] [output-file]
 ```
 
 ### Examples
@@ -19,31 +19,21 @@ Generate a comprehensive retrospective report from Jira data including completed
 # Interactive mode - will prompt for all parameters
 /jira-retro
 
-# Project-based retro
+# With project and dates
 /jira-retro PROJ 2024-01-01 2024-01-31
-
-# Account-based retro (by email)
-/jira-retro john.doe@company.com 2024-01-01 2024-01-31
-
-# Account-based retro (by account ID)
-/jira-retro 5d1234567890abcdef123456 2024-01-01 2024-01-31
 
 # With custom output file
 /jira-retro PROJ 2024-01-01 2024-01-31 sprint10-retro.md
 
-# With just project/account (will prompt for dates)
+# With just project (will prompt for dates)
 /jira-retro PROJ
-/jira-retro john.doe@company.com
 ```
 
 ## Parameters
 
 All parameters are optional. If not provided, the agent will prompt for them:
 
-- **project-key-or-account**:
-  - Project key (e.g., PROJ, TEAM, DEV) - analyzes all work in that project
-  - OR user email (e.g., john.doe@company.com) - analyzes all work by that user
-  - OR account ID (e.g., 5d1234567890abcdef123456) - analyzes all work by that user
+- **project-key**: Jira project key (e.g., PROJ, TEAM, DEV)
 - **start-date**: Period start date (format: YYYY-MM-DD)
 - **end-date**: Period end date (format: YYYY-MM-DD)
 - **output-file**: Path for generated markdown report (default: `retro-YYYY-MM-DD.md`)
@@ -53,7 +43,7 @@ All parameters are optional. If not provided, the agent will prompt for them:
 The `jira-retro-agent` will:
 
 1. **Gather Parameters**
-   - Prompt for project key OR account if not provided
+   - Prompt for project key if not provided
    - Prompt for start and end dates if not provided
    - Confirm output file path
 
@@ -175,8 +165,7 @@ This command uses:
 ## Troubleshooting
 
 **"No issues found"**
-- Verify the project key or account is correct
-- For accounts: ensure email format is correct or use account ID
+- Verify the project key is correct
 - Check that issues were actually completed in the date range
 - Try expanding the date range
 
@@ -192,17 +181,12 @@ This command uses:
 
 ## Example Session
 
-### Project-Based Retro
-
 ```
 You: /jira-retro
 
 Agent: I'll help you generate a retrospective report. Let me gather some information:
 
-Would you like to analyze by project or by account?
-You: project
-
-Agent: What is the Jira project key? (e.g., PROJ, TEAM, DEV)
+What is the Jira project key? (e.g., PROJ, TEAM, DEV)
 You: ALPHA
 
 Agent: What is the start date for the retrospective period? (format: YYYY-MM-DD)
@@ -229,26 +213,4 @@ Key Insights:
 3. 4 issues blocked by API dependencies (avg 2.5 days each)
 
 Would you like me to create action item tickets in Jira?
-```
-
-### Account-Based Retro
-
-```
-You: /jira-retro john.doe@company.com 2024-01-01 2024-01-31
-
-Agent: Fetching data from Jira...
-- Found 18 completed issues assigned to john.doe@company.com
-- Analyzing 89 worklogs
-- Processing blocker information
-
-Generating retrospective report...
-
-✅ Report generated: ./retro-2024-01-31.md
-
-Key Insights:
-1. Completed 18 tickets across 4 different projects
-2. 94% estimation accuracy (excellent!)
-3. 2 issues blocked by external dependencies (avg 1.5 days each)
-
-This is a personal retrospective for John Doe's work across all projects.
 ```

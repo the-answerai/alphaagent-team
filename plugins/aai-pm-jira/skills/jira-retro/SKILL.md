@@ -275,45 +275,30 @@ Retrospectives help teams reflect on completed work, identify patterns, and cont
 ### Basic Queries
 
 ```jql
-# Project-based: All completed issues in date range
+# All completed issues in date range
 project = PROJ AND status = Done AND resolutiondate >= "2024-01-01" AND resolutiondate <= "2024-01-31"
 
-# Account-based: All completed issues by user (email)
-assignee = "john.doe@company.com" AND status = Done AND resolutiondate >= "2024-01-01" AND resolutiondate <= "2024-01-31"
-
-# Account-based: All completed issues by user (account ID)
-assignee = "5d1234567890abcdef123456" AND status = Done AND resolutiondate >= "2024-01-01" AND resolutiondate <= "2024-01-31"
-
-# Issues by sprint (project-based)
+# Issues by sprint
 project = PROJ AND sprint = "Sprint 10"
 
-# Issues by assignee within project
-project = PROJ AND assignee = "john.doe@company.com" AND status = Done AND resolutiondate >= "2024-01-01"
+# Issues by assignee
+project = PROJ AND assignee = "john.doe" AND status = Done AND resolutiondate >= "2024-01-01"
 ```
 
 ### Advanced Queries
 
 ```jql
-# Issues that were blocked (project-based)
+# Issues that were blocked
 project = PROJ AND status changed to "Blocked" during ("2024-01-01", "2024-01-31")
 
-# Issues that were blocked (account-based)
-assignee = "john.doe@company.com" AND status changed to "Blocked" during ("2024-01-01", "2024-01-31")
-
-# Issues with time logged (project-based)
+# Issues with time logged
 project = PROJ AND timespent > 0 AND updated >= "2024-01-01"
 
-# Issues with time logged (account-based)
-assignee = "john.doe@company.com" AND timespent > 0 AND updated >= "2024-01-01"
-
-# Issues by type and priority (project-based)
+# Issues by type and priority
 project = PROJ AND type = Bug AND priority in (High, Critical) AND resolutiondate >= "2024-01-01"
 
-# Issues by type and priority (account-based)
-assignee = "john.doe@company.com" AND type = Bug AND priority in (High, Critical) AND resolutiondate >= "2024-01-01"
-
-# Issues with estimation variance (works for both)
-originalEstimate is not EMPTY AND timespent > 0 AND status = Done AND resolutiondate >= "2024-01-01"
+# Issues with estimation variance
+project = PROJ AND originalEstimate is not EMPTY AND timespent > 0 AND status = Done
 ```
 
 ---
@@ -410,34 +395,6 @@ For analyzing a specific epic or feature:
 
 ### Technical Debt Identified
 {Debt items to address}
-```
-
-### Personal Retro (Account-Based)
-
-For analyzing an individual's work across all projects:
-
-```markdown
-# Personal Retrospective - {Name}
-**Period:** {start} to {end}
-**Account:** {email}
-
-### Work Summary
-- **Projects Worked On:** {count} projects
-- **Tickets Completed:** {count} across all projects
-- **Total Time Logged:** {hours}h
-- **Estimation Accuracy:** {percentage}%
-
-### Project Breakdown
-| Project | Tickets | Time | Avg per Ticket |
-|---------|---------|------|----------------|
-| PROJ-A  | 8       | 32h  | 4h             |
-| PROJ-B  | 5       | 18h  | 3.6h           |
-
-### Personal Insights
-{Observations about work patterns, strengths, growth areas}
-
-### Focus Areas for Next Period
-{Personal goals and improvements}
 ```
 
 ---
