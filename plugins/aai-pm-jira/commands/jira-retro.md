@@ -1,6 +1,6 @@
 ---
 description: Generate a sprint/project retrospective report from Jira with time tracking and blocker analysis
-argument-hint: [project-key] [start-date] [end-date] [output-file]
+argument-hint: [project-key-or-filter] [start-date] [end-date] [output-file]
 ---
 
 # /jira-retro - Generate Retrospective Report
@@ -10,7 +10,7 @@ Generate a comprehensive retrospective report from Jira data including completed
 ## Usage
 
 ```bash
-/jira-retro [project-key] [start-date] [end-date] [output-file]
+/jira-retro [project-key-or-filter] [start-date] [end-date] [output-file]
 ```
 
 ### Examples
@@ -19,21 +19,31 @@ Generate a comprehensive retrospective report from Jira data including completed
 # Interactive mode - will prompt for all parameters
 /jira-retro
 
-# With project and dates
+# With project key and dates
 /jira-retro PROJ 2024-01-01 2024-01-31
+
+# With filter ID and dates
+/jira-retro 12345 2024-01-01 2024-01-31
+
+# With filter name and dates
+/jira-retro "My Sprint Issues" 2024-01-01 2024-01-31
 
 # With custom output file
 /jira-retro PROJ 2024-01-01 2024-01-31 sprint10-retro.md
 
-# With just project (will prompt for dates)
+# With just project/filter (will prompt for dates)
 /jira-retro PROJ
+/jira-retro 12345
 ```
 
 ## Parameters
 
 All parameters are optional. If not provided, the agent will prompt for them:
 
-- **project-key**: Jira project key (e.g., PROJ, TEAM, DEV)
+- **project-key-or-filter**:
+  - Project key (e.g., PROJ, TEAM, DEV)
+  - OR Filter ID (e.g., 12345)
+  - OR Filter name (e.g., "My Sprint Issues")
 - **start-date**: Period start date (format: YYYY-MM-DD)
 - **end-date**: Period end date (format: YYYY-MM-DD)
 - **output-file**: Path for generated markdown report (default: `retro-YYYY-MM-DD.md`)
@@ -43,11 +53,12 @@ All parameters are optional. If not provided, the agent will prompt for them:
 The `jira-retro-agent` will:
 
 1. **Gather Parameters**
-   - Prompt for project key if not provided
+   - Prompt for project key OR filter (ID or name) if not provided
    - Prompt for start and end dates if not provided
    - Confirm output file path
 
 2. **Fetch Jira Data**
+   - Build JQL using project key or filter
    - Query all completed issues in the date range
    - Retrieve worklogs for time tracking analysis
    - Collect blocker information and durations
@@ -143,6 +154,12 @@ The agent will:
 - Release retrospective: Use release planning to launch dates
 - Custom period: Any date range that makes sense for your team
 
+**Using Filters:**
+- Saved filters let you reuse complex JQL queries
+- Great for cross-project analysis or custom issue sets
+- Filter ID is found in filter URL: `/issues/?filter=12345`
+- Filter name must match exactly (case-sensitive)
+
 **Data Quality:**
 - Ensure team logs time consistently
 - Add issue estimates for better variance analysis
@@ -165,9 +182,15 @@ This command uses:
 ## Troubleshooting
 
 **"No issues found"**
-- Verify the project key is correct
+- Verify the project key or filter is correct
+- For filters: Check filter ID/name is accessible to you
 - Check that issues were actually completed in the date range
 - Try expanding the date range
+
+**"Invalid filter"**
+- Verify filter ID is correct (numeric)
+- Ensure filter name is exact (case-sensitive)
+- Check you have permission to access the filter
 
 **"Missing worklog data"**
 - Some issues may not have time logged
@@ -181,12 +204,17 @@ This command uses:
 
 ## Example Session
 
+### Using Project Key
+
 ```
 You: /jira-retro
 
 Agent: I'll help you generate a retrospective report. Let me gather some information:
 
-What is the Jira project key? (e.g., PROJ, TEAM, DEV)
+Would you like to analyze by project key or saved filter?
+You: project
+
+Agent: What is the Jira project key? (e.g., PROJ, TEAM, DEV)
 You: ALPHA
 
 Agent: What is the start date for the retrospective period? (format: YYYY-MM-DD)
@@ -213,4 +241,25 @@ Key Insights:
 3. 4 issues blocked by API dependencies (avg 2.5 days each)
 
 Would you like me to create action item tickets in Jira?
+```
+
+### Using Filter
+
+```
+You: /jira-retro 12345 2024-01-01 2024-01-31
+
+Agent: Fetching data from Jira filter...
+- Using filter ID: 12345
+- Found 19 completed issues in date range
+- Analyzing 142 worklogs
+- Processing blocker information
+
+Generating retrospective report...
+
+✅ Report generated: ./retro-2024-01-31.md
+
+Key Insights:
+1. Completed 19 tickets from saved filter
+2. 81% estimation accuracy
+3. 3 issues blocked by dependencies (avg 2.1 days each)
 ```

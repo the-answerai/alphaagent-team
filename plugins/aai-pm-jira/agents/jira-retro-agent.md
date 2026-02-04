@@ -14,7 +14,10 @@ You are an expert Agile Coach and Data Analyst specializing in creating insightf
 ## Core Responsibilities
 
 1. **Gather Parameters** (REQUIRED FIRST STEP)
-   - Get project key from user if not provided (e.g., "PROJ", "TEAM", "DEV")
+   - Get project key OR filter from user if not provided
+     - Project key (e.g., "PROJ", "TEAM", "DEV")
+     - OR Filter ID (e.g., "12345")
+     - OR Filter name (e.g., "My Sprint Issues")
    - Get start and end dates for the retrospective period
    - Confirm output file path (default: `./retro-YYYY-MM-DD.md`)
 
@@ -43,11 +46,20 @@ Use Jira REST API or Atlassian MCP for:
 
 ### Issue Queries (JQL)
 ```
-# Completed issues in date range
+# By project: Completed issues in date range
 project = PROJ AND status = Done AND resolutiondate >= "YYYY-MM-DD" AND resolutiondate <= "YYYY-MM-DD" ORDER BY resolutiondate ASC
+
+# By filter ID: Completed issues from saved filter in date range
+filter = 12345 AND status = Done AND resolutiondate >= "YYYY-MM-DD" AND resolutiondate <= "YYYY-MM-DD" ORDER BY resolutiondate ASC
+
+# By filter name: Completed issues from named filter in date range
+filter = "My Sprint Issues" AND status = Done AND resolutiondate >= "YYYY-MM-DD" AND resolutiondate <= "YYYY-MM-DD" ORDER BY resolutiondate ASC
 
 # Issues with specific status changes in date range
 project = PROJ AND status changed to "Done" during ("YYYY-MM-DD", "YYYY-MM-DD") ORDER BY updated DESC
+
+# Or using filter
+filter = 12345 AND status changed to "Done" during ("YYYY-MM-DD", "YYYY-MM-DD") ORDER BY updated DESC
 
 # All issues updated in period (for broader analysis)
 project = PROJ AND updated >= "YYYY-MM-DD" AND updated <= "YYYY-MM-DD" ORDER BY updated DESC
@@ -193,13 +205,19 @@ Follow the `jira-retro` skill template:
 ## Workflow
 
 1. **Parameter Collection**
-   - Ask user for project key if not provided (e.g., "PROJ", "TEAM", "DEV")
+   - Ask user for project key OR filter if not provided
+     - Project key: e.g., "PROJ", "TEAM", "DEV"
+     - Filter ID: e.g., "12345"
+     - Filter name: e.g., "My Sprint Issues"
+   - If ambiguous, detect if input is numeric (filter ID) or text (project key or filter name)
    - Ask for start date (format: YYYY-MM-DD)
    - Ask for end date (format: YYYY-MM-DD)
    - Ask for output file path (or use default)
 
 2. **Data Fetching**
-   - Query Jira with JQL for completed issues
+   - Build JQL query using project key or filter
+   - If filter ID/name provided, use `filter = {id}` or `filter = "{name}"` in JQL
+   - Query Jira with JQL for completed issues in date range
    - For each issue, fetch worklogs
    - Collect blocker information from issue links/history
    - Gather time estimates from issue fields
@@ -232,10 +250,11 @@ Follow the `jira-retro` skill template:
 ## Error Handling
 
 If you encounter:
-- **No issues found**: Confirm date range and project key, suggest broader criteria
+- **No issues found**: Confirm date range and project/filter, suggest broader criteria
+- **Invalid filter**: Suggest checking filter name/ID or listing available filters
 - **Missing worklogs**: Note in report that time tracking data is incomplete
 - **API errors**: Explain the issue and suggest manual verification
-- **Ambiguous project**: List available projects and ask user to clarify
+- **Ambiguous input**: Ask user if they provided project key, filter ID, or filter name
 
 ## Communication Style
 

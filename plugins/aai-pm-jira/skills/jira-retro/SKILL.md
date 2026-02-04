@@ -275,8 +275,14 @@ Retrospectives help teams reflect on completed work, identify patterns, and cont
 ### Basic Queries
 
 ```jql
-# All completed issues in date range
+# All completed issues in date range (by project)
 project = PROJ AND status = Done AND resolutiondate >= "2024-01-01" AND resolutiondate <= "2024-01-31"
+
+# All completed issues in date range (by filter ID)
+filter = 12345 AND status = Done AND resolutiondate >= "2024-01-01" AND resolutiondate <= "2024-01-31"
+
+# All completed issues in date range (by filter name)
+filter = "My Sprint Issues" AND status = Done AND resolutiondate >= "2024-01-01" AND resolutiondate <= "2024-01-31"
 
 # Issues by sprint
 project = PROJ AND sprint = "Sprint 10"
@@ -288,17 +294,26 @@ project = PROJ AND assignee = "john.doe" AND status = Done AND resolutiondate >=
 ### Advanced Queries
 
 ```jql
-# Issues that were blocked
+# Issues that were blocked (by project)
 project = PROJ AND status changed to "Blocked" during ("2024-01-01", "2024-01-31")
 
-# Issues with time logged
+# Issues that were blocked (by filter)
+filter = 12345 AND status changed to "Blocked" during ("2024-01-01", "2024-01-31")
+
+# Issues with time logged (by project)
 project = PROJ AND timespent > 0 AND updated >= "2024-01-01"
+
+# Issues with time logged (by filter)
+filter = 12345 AND timespent > 0 AND updated >= "2024-01-01"
 
 # Issues by type and priority
 project = PROJ AND type = Bug AND priority in (High, Critical) AND resolutiondate >= "2024-01-01"
 
 # Issues with estimation variance
 project = PROJ AND originalEstimate is not EMPTY AND timespent > 0 AND status = Done
+
+# Combining filter with additional criteria
+filter = "Team Backlog" AND assignee = currentUser() AND status = Done AND resolutiondate >= startOfWeek()
 ```
 
 ---
@@ -395,6 +410,27 @@ For analyzing a specific epic or feature:
 
 ### Technical Debt Identified
 {Debt items to address}
+```
+
+### Filter-Based Retro
+
+For analyzing issues from a saved filter:
+
+```markdown
+# Retrospective - {Filter Name}
+**Period:** {start} to {end}
+**Filter:** {filter_name} (ID: {filter_id})
+
+### Filter Scope
+{Brief description of what the filter includes}
+
+### Delivery Summary
+- **Issues Completed:** {count}
+- **Total Time Logged:** {hours}h
+- **Estimation Accuracy:** {percentage}%
+
+### Analysis
+{Insights specific to the filtered set of issues}
 ```
 
 ---
