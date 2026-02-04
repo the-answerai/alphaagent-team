@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "AlphaAgent Team Plugin Marketplace - Claude Code plugins for autonomous coding assistance",
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   "plugins": [
     {
@@ -36,10 +36,10 @@
     {
       "name": "aai-pm-jira",
       "source": "./plugins/aai-pm-jira",
-      "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets",
-      "version": "1.0.0",
+      "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets. Create saved filters with guided JQL query building.",
+      "version": "1.1.0",
       "category": "pm",
-      "tags": ["jira", "tickets", "pm", "project-management", "atlassian"]
+      "tags": ["jira", "tickets", "pm", "project-management", "atlassian", "filters", "jql"]
     },
     {
       "name": "aai-pm-github",
