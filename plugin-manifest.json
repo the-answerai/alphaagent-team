@@ -329,6 +329,8 @@
         "project-management",
         "workflow",
         "atlassian",
+        "filters",
+        "jql"
         "retrospective",
         "time-tracking"
       ],
@@ -873,5 +875,5 @@
       "autoLoad": null
     }
   ],
-  "generatedAt": "2026-02-05T04:57:48.373Z"
+  "generatedAt": "2026-02-04T19:03:42.840Z"
 }

@@ -36,7 +36,7 @@
     {
       "name": "aai-pm-jira",
       "source": "./plugins/aai-pm-jira",
-      "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets. Generate sprint retrospectives with time tracking analysis.",
+      "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets. Generate sprint retrospectives with time tracking analysis. Create saved filters with guided JQL query building.",
       "version": "1.1.0",
       "category": "pm",
       "tags": ["jira", "tickets", "pm", "project-management", "atlassian", "retrospective", "time-tracking"]
