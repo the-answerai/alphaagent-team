@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "AlphaAgent Team Plugin Marketplace - Claude Code plugins for autonomous coding assistance",
-    "version": "1.0.3"
+    "version": "1.0.4"
   },
   "plugins": [
     {
@@ -28,10 +28,10 @@
     {
       "name": "aai-pm-linear",
       "source": "./plugins/aai-pm-linear",
-      "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets",
-      "version": "1.0.0",
+      "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets. Generate customer-facing slide deck reports.",
+      "version": "1.1.0",
       "category": "pm",
-      "tags": ["linear", "tickets", "pm", "project-management"]
+      "tags": ["linear", "tickets", "pm", "project-management", "report", "slide-deck"]
     },
     {
       "name": "aai-pm-jira",
@@ -44,10 +44,10 @@
     {
       "name": "aai-pm-github",
       "source": "./plugins/aai-pm-github",
-      "description": "GitHub Issues management - triage issues, workflow automation",
-      "version": "1.0.0",
+      "description": "GitHub Issues management - triage issues, workflow automation. Generate customer-facing slide deck reports.",
+      "version": "1.1.0",
       "category": "pm",
-      "tags": ["github", "issues", "pm", "triage"]
+      "tags": ["github", "issues", "pm", "triage", "report", "slide-deck"]
     },
     {
       "name": "aai-dev-frontend",
