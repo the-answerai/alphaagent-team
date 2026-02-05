@@ -287,8 +287,8 @@
     },
     {
       "name": "aai-pm-github",
-      "version": "1.0.0",
-      "description": "GitHub Issues management - create, plan, optimize, and triage GitHub issues with codebase exploration and duplicate detection",
+      "version": "1.1.0",
+      "description": "GitHub Issues management - create, plan, optimize, and triage GitHub issues with codebase exploration and duplicate detection. Generate customer-facing slide deck reports for account management.",
       "category": "pm",
       "source": "./plugins/aai-pm-github",
       "keywords": [
@@ -297,16 +297,19 @@
         "pm",
         "triage",
         "workflow",
-        "git"
+        "git",
+        "report",
+        "slide-deck",
+        "account-management"
       ],
       "author": {
         "name": "AnswerAI",
         "url": "https://github.com/the-answerai"
       },
       "components": {
-        "agents": 4,
-        "skills": 4,
-        "commands": 3,
+        "agents": 5,
+        "skills": 5,
+        "commands": 4,
         "hooks": false
       },
       "requires": {},
@@ -345,8 +348,8 @@
     },
     {
       "name": "aai-pm-linear",
-      "version": "1.0.0",
-      "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets with codebase exploration and duplicate detection",
+      "version": "1.1.0",
+      "description": "Linear ticket management - create, plan, optimize, and triage Linear tickets with codebase exploration and duplicate detection. Generate customer-facing slide deck reports for account management.",
       "category": "pm",
       "source": "./plugins/aai-pm-linear",
       "keywords": [
@@ -356,16 +359,19 @@
         "project-management",
         "workflow",
         "triage",
-        "sprint-planning"
+        "sprint-planning",
+        "report",
+        "slide-deck",
+        "account-management"
       ],
       "author": {
         "name": "AnswerAI",
         "url": "https://github.com/the-answerai"
       },
       "components": {
-        "agents": 4,
-        "skills": 4,
-        "commands": 3,
+        "agents": 5,
+        "skills": 5,
+        "commands": 4,
         "hooks": false
       },
       "requires": {},
@@ -867,5 +873,5 @@
       "autoLoad": null
     }
   ],
-  "generatedAt": "2026-02-04T18:40:19.800Z"
+  "generatedAt": "2026-02-05T04:57:48.373Z"
 }
