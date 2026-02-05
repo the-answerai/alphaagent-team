@@ -1,12 +1,12 @@
 {
   "name": "aai-pm-jira",
   "version": "1.1.0",
-  "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets. Create saved filters with guided JQL query building.",
+  "description": "Jira ticket management - create, plan, optimize, and triage Jira tickets with codebase exploration and duplicate detection. Generate sprint retrospectives with time tracking analysis.",
   "author": {
     "name": "AnswerAI",
     "url": "https://github.com/the-answerai"
   },
   "repository": "https://github.com/the-answerai/alphaagent-team",
   "license": "MIT",
-  "keywords": ["jira", "tickets", "pm", "project-management", "workflow", "atlassian", "filters", "jql"]
+  "keywords": ["jira", "tickets", "pm", "project-management", "workflow", "atlassian", "retrospective", "time-tracking"]
 }
